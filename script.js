@@ -1,4 +1,4 @@
-const waitTime = 15; // seconds (change if needed)
+const waitTime = 15; // seconds
 const timerText = document.getElementById("timer");
 const btn = document.getElementById("finishBtn");
 
@@ -10,16 +10,16 @@ const interval = setInterval(() => {
 
   if (timeLeft < 0) {
     clearInterval(interval);
-    timerText.innerText = "You can download now";
+    timerText.innerText = "Ready to download";
     btn.disabled = false;
   }
 }, 1000);
 
 btn.onclick = () => {
-  const link = document.createElement("a");
-  link.href = "download/file.zip";   // 👈 download file path
-  link.download = "";
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
+  const a = document.createElement("a");
+  a.href = "download/video.mp4";
+  a.setAttribute("download", "video.mp4");
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
 };
