@@ -1,7 +1,7 @@
 const ads = [
-  { src: "ads/ad1.mp4", time: 10, skip: true },
-  { src: "ads/ad2.mp4", time: 10, skip: true },
-  { src: "ads/ad3.mp4", time: 15, skip: false }
+  { src: "ads/ad1.mp4", time: 20, skip: true },
+  { src: "ads/ad2.mp4", time: 20, skip: true },
+  { src: "ads/ad3.mp4", time: 20, skip: false }
 ];
 
 let current = 0;
