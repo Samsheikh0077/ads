@@ -18,14 +18,14 @@ header {
 }
 
 .ad-box {
-  width: 100%;
-  height: 60vh;
+  width: 50%;
+  height: 30vh;
   background: black;
 }
 
 .ad-box video {
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 50%;
   object-fit: cover;
 }
 
