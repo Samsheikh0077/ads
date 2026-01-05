@@ -1,45 +1,86 @@
+/* =========================
+   Global Styles
+========================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #0f172a;
-  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0f172a;
+  color: #ffffff;
   text-align: center;
 }
 
+/* =========================
+   Header
+========================= */
 header {
   padding: 12px 16px;
+  background-color: #020617;
   text-align: right;
-  background: #020617;
 }
 
 .brand {
-  font-weight: bold;
+  font-weight: 700;
   color: #38bdf8;
 }
 
+/* =========================
+   Video Ad Container
+========================= */
 .ad-box {
-  width: 50%;
-  height: 30vh;
-  background: black;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #000;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+/* Video keeps ORIGINAL SIZE & RATIO */
 .ad-box video {
-  width: 50%;
-  height: 50%;
-  object-fit: cover;
+  width: 100%;
+  height: auto;
+  max-height: 90vh;
+  object-fit: contain;
+  display: block;
 }
 
+/* =========================
+   Main Content
+========================= */
 main {
-  padding: 15px;
+  padding: 16px;
 }
 
+/* =========================
+   Buttons
+========================= */
 button {
   padding: 12px 24px;
   font-size: 16px;
   border-radius: 6px;
   border: none;
+  cursor: pointer;
 }
 
 button:disabled {
   opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* =========================
+   Desktop Enhancements
+========================= */
+@media (min-width: 768px) {
+  .ad-box {
+    max-width: 720px;
+  }
 }
