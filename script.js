@@ -1,4 +1,4 @@
-const waitTime = 15; // seconds
+const waitTime = 25; // seconds
 const timerText = document.getElementById("timer");
 const btn = document.getElementById("finishBtn");
 
